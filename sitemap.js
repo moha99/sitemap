@@ -15,12 +15,12 @@
 // ---------------------------------------------------
 // Modified by Aneesh 
 // www.bloggerplugins.org
-// ????? ????? ?? ????? ????? 
-// http://www.condaianllkhir.com/
-// Date : 02-08-2011
+// تعريب المطور 
+// http://www.thedev1.com/
+// Date : 04-29-207
 // global arrays
 
-   var postTitle = new Array();     // array of posttitles
+  var postTitle = new Array();     // array of posttitles
    var postUrl = new Array();       // array of posturls
    var postDate = new Array();      // array of post publish dates
    var postSum = new Array();       // array of post summaries
@@ -184,11 +184,11 @@ function displayToc(filter) {
 // this function creates a three-column table and adds it to the screen
    var numDisplayed = 0;
    var tocTable = '';
-   var tocHead1 = '????? ???????';
+   var tocHead1 = 'عنوان الموضوع';
    var tocTool1 = 'Click to sort by title';
-   var tocHead2 = '???????';
+   var tocHead2 = 'التاريخ';
    var tocTool2 = 'Click to sort by date';
-   var tocHead3 = '???????';
+   var tocHead3 = 'الأقسام';
    var tocTool3 = '';
    if (sortBy == "titleasc") { 
       tocTool1 += ' (descending)';
@@ -235,10 +235,10 @@ function displayToc(filter) {
    }
    tocTable += '</table>';
    if (numDisplayed == postTitle.length) {
-      var tocNote = '<span class="toc-note"> ??? ????????? ' + postTitle.length + ' ?????<br/></span>'; }
+      var tocNote = '<span class="toc-note">عدد المواضيع ' + postTitle.length + ' موضوع<br/></span>'; }
    else {
-      var tocNote = '<span class="toc-note">??? ????????? ' + numDisplayed + ' ?????? ???? \'';
-      tocNote += postFilter + '\' *** '+ postTitle.length + ' ????? ????? ?????????<br/></span>';
+      var tocNote = '<span class="toc-note">عدد المواضيع' + numDisplayed + ' الخاصة بقسم \'';
+      tocNote += postFilter + '\' *** '+ postTitle.length + ' العدد الكلي للمواضيع<br/></span>';
    }
    tocdiv.innerHTML = tocNote + tocTable;
 } // end of displayToc
@@ -272,6 +272,6 @@ function hideToc() {
   var tocdiv = document.getElementById("toc");
   tocdiv.innerHTML = '';
   var toclink = document.getElementById("toclink");
-  toclink.innerHTML = '<a href="#" onclick="scroll(0,0); showToc(); Effect.toggle('+"'toc-result','blind');"+'">� Show Table of Contents</a> <img src="http://chenkaie.blog.googlepages.com/new_1.gif"/>';
+  toclink.innerHTML = '<a href="#" onclick="scroll(0,0); showToc(); Effect.toggle('+"'toc-result','blind');"+'">» Show Table of Contents</a> <img src="http://chenkaie.blog.googlepages.com/new_1.gif"/>';
 }
-"<div id=\"toc-loading\">Loading content, please wait...<br /><img align=\"middle\" src=\"http://2.bp.blogspot.com/-WK0-4ILTaL8/T0NjToWRWlI/AAAAAAAABmI/U5p3cqo9lOU/s1600/loading.gif\" /></div>";
+"<div id=\"toc-loading\">Loading content, please wait...<br /><img align=\"middle\" src=\"http://2.bp.blogspot.com/-WK0-4ILTaL8/T0NjToWRWlI/AAAAAAAABmI/U5p3cqo9lOU/s1600/loading.gif\" /></div>"; 
